@@ -78,8 +78,23 @@ console.log(oddOrEven(5));
 //  c = a + b;
 //  a = b;
 //  b = c;
-function Fibbonacci(number) {}
-Fibbonacci();
+function Fibbonacci(number) {
+	let a = 0;
+	let b = 1;
+	let c;
+
+	console.log(a);
+	console.log(b);
+
+	for (let i = 0; i < number - 2; i++) {
+		c = a + b;
+		a = b;
+		b = c;
+		console.log(c);
+	}
+}
+
+Fibbonacci(10);
 
 //11.--------------------------------------------------------------------------------------
 //BONUS!Implement fizzbuzz, if a number is divisible by 3: Fizz, if a number is divisible by 5: Buzz, if the number is divisible by both 3 and 5, FizzBuzz
